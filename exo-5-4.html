@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>exo4p5</title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body>
+    <h1>Regarder l'image et elle bougera !Fixer un point dans l'image et elle s'arrêtera de bouger! </h1>
+    <img
+      onclick="Image2(this)"
+      onmouseover="increasesize(this)"
+      onmouseout="Image1(this)"
+      src="901.jpg"
+      title="Fixer l'image !"
+      alt="Non ce n'est pas un GIF"
+    />
+<h2>Ceci n'est pas un GIF</h2>
+    <script>
+      function increasesize(x) {
+        x.style.width = "100%";
+      }
+
+      function Image2(x) {
+        x.setAttribute("src", "903.jpg");
+      }
+
+      function Image1(x) {
+        x.style.width = "50%";
+      }
+    </script>
+
+  
+  </body>
+</html>

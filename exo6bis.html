@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>exo6p5</title>
+  </head>
+
+  <body>
+    <form>
+      <div class="form-group">
+        <label for="name">Nom:</label>
+
+        <input
+          onfocusin="FocusIn(this)"
+          onfocusout="FocusOut(this)"
+          class="form-control"
+          type="text"
+          id="name"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="mail">Mail</label>
+
+        <input
+          onfocusin="FocusIn(this)"
+          onfocusout="FocusOut(this)"
+          class="form-control"
+          type="email"
+          id="mail"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="age">Âge:</label>
+
+        <input
+          onfocusin="FocusIn(this)"
+          onfocusout="FocusOut(this)"
+          class="form-control"
+          type="number"
+          id="age"
+        />
+      </div>
+
+      <button type="button">Valider</button>
+    </form>
+
+    <script>
+      function FocusIn(x) {
+        x.setAttribute("class", "form-control border border-dark");
+      }
+
+      function FocusOut(x) {
+        x.setAttribute("class", "form-control");
+      }
+    </script>
+  </body>
+</html>

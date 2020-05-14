@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+  <fieldset>
+    <legend>Inscription</legend>
+  <form id="myform"></form>
+  <p>Votre nom d'Utilisateur</p>
+  <input type="Text" name="username" id="username"/>
+  <p>Votre mot de passe</p>
+  <input type="password" id="password"/>
+  <p>Confirmez votre mot de passe</p>
+  <input type="password" id="repeatpassword"/><br/><br/>
+  <input type="submit"/>
+    </fieldset>
+  <script>
+      function checkPass() {
+
+var pass = document.getElementById('password').value, confirmPass = document.getElementById('repeatpassword').value;
+      
+if (pass == confirmPass) {
+
+document.getElementById('password').style.borderColor = "green";event.preventDefault();
+
+document.getElementById('repeatpassword').style.borderColor = "green";event.preventDefault();
+
+} else {
+
+document.getElementById('password').style.borderColor = "red";event.preventDefault();
+
+document.getElementById('repeatpassword').style.borderColor = "red";event.preventDefault();
+}
+    </script>
+</body>
+</html>

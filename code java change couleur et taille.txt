@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <meta charset="utf-8" />
+    <title>Exercice 5</title>
+</head>
+<body>
+    <p id="text">
+        Python est un langage de programmation interprété, multi-paradigme et multiplateformes. Il favorise la programmation impérative structurée, fonctionnelle et orientée objet. Il est doté d'un typage dynamique fort, d'une gestion automatique de la mémoire
+        par ramasse-miettes et d'un système de gestion d'exceptions ; il est ainsi similaire à Perl, Ruby, Scheme, Smalltalk et Tcl. Le langage Python est placé sous une licence libre proche de la licence BSD et fonctionne sur la plupart des plates-formes
+        informatiques, des smartphones aux ordinateurs centraux, de Windows à Unix avec notamment GNU/Linux en passant par macOS, ou encore Android, iOS, et peut aussi être traduit en Java ou .NET. Il est conçu pour optimiser la productivité des programmeurs
+        en offrant des outils de haut niveau et une syntaxe simple à utiliser. Il est également apprécié par certains pédagogues qui y trouvent un langage où la syntaxe, clairement séparée des mécanismes de bas niveau, permet une initiation aisée aux
+        concepts de base de la programmation.
+    </p>
+    <button type="button" onclick="changeTextColor('pink')">Rose</button>
+    <button type="button" onclick="changeTextColor('blue')">Bleu</button>
+    <button type="button" onclick="changeTextColor('purple')">Violet</button>
+    <button type="button" onclick="changeTextWeight('bold')">Gras</button>
+    <button type="button" onclick="changeTextStyle('italic')">Italique</button>
+    <script>
+        function changeTextColor(newColor) {
+            document.getElementById('text').style.color = newColor;
+        }
+        function changeTextWeight(newText) {
+            document.getElementById('text').style.fontWeight = newText;
+        }
+        function changeTextStyle(newStyle) {
+            document.getElementById('text').style.fontStyle = newStyle;
+        }
+    </script>
+</body>
+</html>
+
+<html>
+<head>
+
+</head>
+<body>
+<table align="center">
+<tr>
+<td align="center">
+Taille du texte : <a href="javascript:changetaille(7);">7</a> <a href="javascript:changetaille(10);">10</a> <a href="javascript:changetaille(16);">16</a> <a href="javascript:changetaille(24);">24</a>
+</td>
+</tr>
+<tr>
+<td align="center">
+Couleur du texte : <a href="javascript:changecouleur('#000000');"><img src="noir.gif"></a> <a href="javascript:changecouleur('#FF0000');"><img src="rouge.gif"></a> <a href="javascript:changecouleur('#00FF00');"><img src="rouge.gif"></a> <a href="javascript:changecouleur('#0000FF');"><img src="bleu.gif"></a> <a href="javascript:changecouleur('#FF00FF');"><img src="magenta.gif"></a> <a href="javascript:changecouleur('#FFFF00');"><img src="cyan.gif"></a> <a href="javascript:changecouleur('#00FFFF');"><img src="jaune.gif"></a>
+</td>
+</tr>
+<tr>
+<td align="center">
+<div id="texte" style="font-weight:bold; font-size:10px">Voici le texte</div>
+</td>
+</tr>
+</table>
+<script language="javascript">
+function changetaille(taille) {
+document.getElementById('texte').style.fontSize=taille+'px';
+}
+function changecouleur(couleur) {
+document.getElementById('texte').style.color=couleur;
+}
+</script>
+</body>
+</html>
+Validé XHTML 1.1    Validé CSS
+www.ostralo.net
